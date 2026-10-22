@@ -46,4 +46,19 @@ public class Conta {
     public void setLimite(double limite) {
         this.limite = limite;
     }
+
+public boolean sacar(double valor) {
+
+    if (this.saldo + this.limite >= valor) {
+    this.saldo = this.saldo - valor;
+
+        System.out.println("Saque de R$ " + valor + " realizado com sucesso!");
+
+    return true;
+    } else {
+
+    System.out.println("Erro: Saldo e limite insuficientes para o saque de R$ " + valor);
+    return false;
+    }
+}
 }
