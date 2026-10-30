@@ -1,3 +1,4 @@
+
 // YUDY
 package model;
 
@@ -6,6 +7,10 @@ public class Despesa {
     private String descricao;
     private double valor;
     private String status;
+
+public Despesa() {
+        
+    }
 
     public Despesa(String descricao, double valor) {
         this.descricao = descricao;
